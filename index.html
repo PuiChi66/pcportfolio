@@ -153,6 +153,9 @@
             padding: 1.5rem;
             border-radius: var(--border-radius);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* NEW: Use flexbox to organize content vertically */
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -165,13 +168,20 @@
             color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
+        
+        /* Ensures description has space below it and takes up necessary room */
+        .project-card p {
+            margin-bottom: 1rem;
+        }
+
 
         .project-card a {
             color: var(--secondary-color);
             text-decoration: none;
             font-weight: 600;
             display: inline-block;
-            margin-top: 1rem;
+            /* CHANGE: Push the link to the bottom of the card */
+            margin-top: auto;
         }
 
         /* Skills Section */
@@ -297,10 +307,10 @@
                     <p>Explores main reasons for academic stress among high school, undergraduate and post-graduate students, and using Random Forest Regressor to predict academic stress index.</p>
                     <a href="https://colab.research.google.com/drive/1Xx1VlEnX4etyLZgqDd7Av1_qyv3jNFzk?usp=sharing" target="_blank">View here</a>
                 </div>
-                <!-- Project 3 -->
+                <!-- Project 3 - UPDATED DESCRIPTION -->
                 <div class="project-card">
                     <h3>Global Cybersecurity Threats Data Analysis</h3>
-                    <p>Data visualization and analysis of global cybersecurity threats, using Looker Studio.</p>
+                    <p>Data visualization and analysis of global cybersecurity threats using Looker Studio. Provides insights for cybersecurity strategies to minimize financial loss with different defense mechanisms.</p>
                     <a href="https://lookerstudio.google.com/reporting/c0a82d67-ec0d-4e02-b8ba-86b1940d31b2" target="_blank">View here</a>
 
                 </div>
@@ -312,7 +322,7 @@
                 </div>
                 <!-- Project 5 -->
                 <div class="project-card">
-                    <h3>Sentiment Analysis of Social Media Posts (Part2)</h3>
+                    <h3>Sentiment Analysis of Social Media Posts (Part2) </h3>
                     <p>Performs K-Means clustering on both sentiments and text content, and compares if both clustering results are similar.</p>
                     <a href="https://colab.research.google.com/drive/1_5dM5WxuAj9kVekqdD7a4ooKsinNnINu?usp=sharing" target="_blank">View here</a>
                 </div>
